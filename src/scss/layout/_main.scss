@@ -1,0 +1,40 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateY(80%);
+&_logo  {
+    width: 10rem;
+    &#logo_img{
+        width: 100%;
+    }
+}
+&_grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: aquamarine;
+    
+    &_desing{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
+    }
+    &_filled{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
+    }
+    &_share{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
+    }
+    & img{
+        width: 2rem;  
+    }
+}
+}
+
