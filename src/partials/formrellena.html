@@ -1,13 +1,15 @@
-<fieldset>
+<fieldset class="fieldset-rellena">
 
     <p>Rellena</p>
     <label for="firstName">Nombre</label>
-    <input placeholder="Escribe aquí tu Nombre" type="text" id="firstName" name="firstName" required />
+    <input placeholder="Cual es tu Nombre?" type="text" id="firstName" name="firstName" required />
     <label for="surname">Apellido</label>
-    <input  type="text" id="surname" name="surname" />
-    <label for="phone">Teléfono</label>
-    <input type="tel" id="phone" name="phone" />
-    <label for="postalcode">Código postal</label>
-    <input type="number" id="postalcode" name="postalcode" />
+    <input placeholder="Cual es tu apellido?" type="text" id="surname" name="surname" />
+    <label for="date">Cuando y a qué horas?</label>
+    <input type="datetime-local" id="date" name="date-of-event" value="2024-07-22" min="2024-01-01" max="2035-01-01">
+    <label for="imageUpload">Sube tu imagen:</label>
+    <input type="file" id="imageUpload" name="imageUpload" accept="image/*">
+    <button type="submit">Submit</button>
+
 
 </fieldset>
