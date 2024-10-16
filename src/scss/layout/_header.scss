@@ -1,5 +1,17 @@
-.page__header {
-  display: flex;
-  justify-content: space-evenly;
-  margin-bottom: 3rem;
+.header {
+  position: fixed;
+}
+
+.menu {
+  z-index: 10;
+  top: 0;
+  left: 0;
+  padding: 15px;
+  padding-bottom: 10px; 
+  background-color: $color-secondary;
+
+  &__icon {
+    width: 15px;
+    height: 15px;
+  }
 }
