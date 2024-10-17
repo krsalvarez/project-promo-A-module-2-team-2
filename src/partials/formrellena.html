@@ -1,0 +1,46 @@
+<fieldset class="fieldset-rellena">
+  <legend class="legend">
+    <h3>RELLENA <i class="fa-solid fa-angle-down"></i></h3>
+  </legend>
+
+  <div class="fill">
+    <label class="form-labels" for="firstName">NOMBRE</label>
+    <input
+      class="input"
+      placeholder="Ej. Homer"
+      type="text"
+      id="firstName"
+      name="firstName"
+      required
+    />
+    <label class="form-labels" for="surname">APELLIDO</label>
+    <input
+      class="input"
+      placeholder="Ej. Simpson"
+      type="text"
+      id="surname"
+      name="surname"
+    />
+    <label class="form-labels" for="date">CUANDO SERÁ TU EVENTO?</label>
+    <input
+      class="input"
+      type="datetime-local"
+      id="date"
+      name="date-of-event"
+      min="2024-01-01"
+      max="2035-01-01"
+    />
+    <label class="form-labels" for="imageUpload">SUBE TU IMAGEN:</label>
+    <input
+      class="input"
+      type="file"
+      id="imageUpload"
+      name="imageUpload"
+      accept="image/*"
+    />
+  </div>
+  <div class="buttons">
+   <button class="restartButton" type="reset">Borrar ⭮</button>
+   <button class="submitButton" type="submit">Crear</button>
+  </div>
+</fieldset>

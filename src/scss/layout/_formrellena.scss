@@ -1,0 +1,57 @@
+.fieldset-rellena {
+  display: flex;
+  flex-direction: column;
+  border: none;
+  padding: 10px;
+
+  h3 {
+    color: $color3;
+    background-color: $color5;
+  }
+}
+.fill {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.input {
+  align-self: flex-start;
+  background-color: $color4;
+  border: none;
+}
+
+// .legend {
+//   background-color: black;
+// }
+
+.form-labels {
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.submitButton {
+  padding: 10px;
+  margin: 10px;
+  background-color: $color5;
+  font-size: bold;
+  color: $color3;
+  border-radius: 1rem;
+  font-size: 1.2rem;
+  border: none;
+}
+
+.restartButton {
+  padding: 8px;
+  margin: 10px;
+  background-color: $color5;
+  font-size: bold;
+  color: $color3;
+  border-radius: 1rem;
+  font-size: 1.2rem;
+  border: none;
+}
+
+.buttons {
+  align-content: space-between;
+}
