@@ -1,0 +1,26 @@
+.fieldset-rellena {
+  display: flex;
+  flex-direction: column;
+  border: none;
+  padding: 10px;
+
+  h3 {
+    color: $color3;
+    background-color: $color5;
+  }
+}
+.fill {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.input {
+  align-self: flex-start;
+}
+.submitButton {
+  align-self: flex-start;
+  padding: 10px;
+  margin-left: 10px;
+  background-color: $color5;
+}
