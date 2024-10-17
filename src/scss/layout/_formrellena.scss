@@ -17,10 +17,25 @@
 
 .input {
   align-self: flex-start;
+  background-color: $color4;
+  border: none;
+
+
 }
+
+.form-labels {
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
 .submitButton {
   align-self: flex-start;
   padding: 10px;
-  margin-left: 10px;
+  margin: 10px;
   background-color: $color5;
+  font-size: bold;
+  color: $color3;
+  border-radius: 1rem;
+  font-size: 1.2rem;
+  border: none;
 }

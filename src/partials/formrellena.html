@@ -1,24 +1,24 @@
 <fieldset class="fieldset-rellena">
   <h3>RELLENA</h3>
   <div class="fill">
-    <label for="firstName">Nombre</label>
+    <label class="form-labels" for="firstName">NOMBRE</label>
     <input
       class="input"
-      placeholder="Cual es tu Nombre?"
+      placeholder="Ej. Homer"
       type="text"
       id="firstName"
       name="firstName"
       required
     />
-    <label for="surname">Apellido</label>
+    <label class="form-labels" for="surname">APELLIDO</label>
     <input
       class="input"
-      placeholder="Cual es tu apellido?"
+      placeholder="Ej. Simpson"
       type="text"
       id="surname"
       name="surname"
     />
-    <label for="date">Cuando y a qué horas será el evento?</label>
+    <label class="form-labels" for="date">CUANDO SERÁ TU EVENTO?</label>
     <input
       class="input"
       type="datetime-local"
@@ -27,7 +27,7 @@
       min="2024-01-01"
       max="2035-01-01"
     />
-    <label for="imageUpload">Sube tu imagen:</label>
+    <label class="form-labels" for="imageUpload">SUBE TU IMAGEN:</label>
     <input
       class="input"
       type="file"
@@ -36,5 +36,5 @@
       accept="image/*"
     />
   </div>
-  <button class="submitButton" type="submit">Submit</button>
+  <button class="submitButton" type="submit">Crear</button>
 </fieldset>
