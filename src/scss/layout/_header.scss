@@ -1,14 +1,17 @@
 header {
-  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  background-color: $color4;
+  width: 100%;
+  margin-top: 0;
 }
 
 .logo {
-  z-index: 10;
   top: 0;
   left: 0;
   padding: 15px;
   padding-bottom: 10px; 
-  background-color: black;
 
     &__icon {
       width: 25px;
