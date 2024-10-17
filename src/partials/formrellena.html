@@ -1,15 +1,40 @@
 <fieldset class="fieldset-rellena">
-
-    <p>Rellena</p>
+  <h3>RELLENA</h3>
+  <div class="fill">
     <label for="firstName">Nombre</label>
-    <input class="input" placeholder="Cual es tu Nombre?" type="text" id="firstName" name="firstName" required />
+    <input
+      class="input"
+      placeholder="Cual es tu Nombre?"
+      type="text"
+      id="firstName"
+      name="firstName"
+      required
+    />
     <label for="surname">Apellido</label>
-    <input class="input" placeholder="Cual es tu apellido?" type="text" id="surname" name="surname" />
+    <input
+      class="input"
+      placeholder="Cual es tu apellido?"
+      type="text"
+      id="surname"
+      name="surname"
+    />
     <label for="date">Cuando y a qué horas será el evento?</label>
-    <input class="input" type="datetime-local" id="date" name="date-of-event" min="2024-01-01" max="2035-01-01">
+    <input
+      class="input"
+      type="datetime-local"
+      id="date"
+      name="date-of-event"
+      min="2024-01-01"
+      max="2035-01-01"
+    />
     <label for="imageUpload">Sube tu imagen:</label>
-    <input class="input" type="file" id="imageUpload" name="imageUpload" accept="image/*">
-    <button type="submit">Submit</button>
-
-
+    <input
+      class="input"
+      type="file"
+      id="imageUpload"
+      name="imageUpload"
+      accept="image/*"
+    />
+  </div>
+  <button class="submitButton" type="submit">Submit</button>
 </fieldset>
