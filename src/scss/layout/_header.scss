@@ -1,17 +1,17 @@
-.header {
+header {
   position: fixed;
 }
 
-.menu {
+.logo {
   z-index: 10;
   top: 0;
   left: 0;
   padding: 15px;
   padding-bottom: 10px; 
-  background-color: $color-secondary;
+  background-color: black;
 
-  &__icon {
-    width: 15px;
-    height: 15px;
-  }
+    &__icon {
+      width: 25px;
+      height: 25px;
+    }
 }
