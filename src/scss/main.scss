@@ -1,8 +1,8 @@
-@import 'core/variables';
-@import 'core/reset';
+@import 'core/_variables';
+@import 'core/_reset';
 @import 'components/code';
 @import 'components/links';
-@import 'layout/page';
+@import 'layout/_main.scss';
 @import 'layout/header';
 @import 'layout/footer';
-@import 'pages/index';
+
