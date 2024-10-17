@@ -31,7 +31,6 @@
 }
 
 .submitButton {
-  align-self: flex-start;
   padding: 10px;
   margin: 10px;
   background-color: $color5;
@@ -40,4 +39,19 @@
   border-radius: 1rem;
   font-size: 1.2rem;
   border: none;
+}
+
+.restartButton {
+  padding: 8px;
+  margin: 10px;
+  background-color: $color5;
+  font-size: bold;
+  color: $color3;
+  border-radius: 1rem;
+  font-size: 1.2rem;
+  border: none;
+}
+
+.buttons {
+  align-content: space-between;
 }
