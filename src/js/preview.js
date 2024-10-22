@@ -20,9 +20,12 @@ function handleForm(event) {
         else if (event.target.id === "surname") {
             fillSurname.innerHTML = event.target.value;
         }
-        else if (event.target.id === "date") {
-            fillDate.innerHTML = event.target.value;
-        }
+       
 }
+function dateForm() {
+    fillDate.innerHTML = dateInput.value;
+}
+
+dateInput.addEventListener("change", dateForm);
 
 fillForm.addEventListener("input", handleForm);
