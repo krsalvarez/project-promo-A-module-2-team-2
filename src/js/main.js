@@ -1,5 +1,5 @@
 'use strict';
 
-import "./collapsed";
-import "./preview";
-import "./reset";
+import "./collapsed.js";
+import "./preview.js";
+import "./reset.js";
