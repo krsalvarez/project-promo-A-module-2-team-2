@@ -1,12 +1,36 @@
-<fieldset>
-  <legend>DISEÑO</legend>
-  <label for="colors">COLORS</label>
-  <select id="colors" placeholder="Elige tu color" name="colores">
-    <option value="Palette1">Paleta 1</option>
-    <option value="Palette2">Paleta 2</option>
-  <label for="events">EVENTO</label>
-  <select id="events" type="text" placeholder="Elige tu evento" name="eventos">
-    <option value="birthday">Cumpleaños</option>
-    <option value="wedding">Boda</option>
-  <input type="submit" value="Enviar info" />
+<fieldset class="fieldset1">
+  <h3 class="form-design js-design">
+    DISEÑO <i class="fa-solid fa-angle-down js-arrow"></i>
+  </h3>
+
+  <div class="hidden js-collapse">
+    <div class="colors">
+      <h4 for="colors">COLORES</h4>
+      <div class="colorPalettes">
+        <label>
+          <input id="palette1" type="radio" value="palette1" name="palette" />
+          <img src="/images/palette1.jpg" alt="paleta 1" />
+        </label>
+        <label>
+          <input id="palette2" type="radio" value="palette2" name="palette" />
+          <img src="/images/palette2.jpg" alt="paleta 2" />
+        </label>
+        <label>
+          <input id="palette3" type="radio" value="palette3" name="palette" />
+          <img src="/images/palette3.jpg" alt="paleta 3" />
+        </label>
+      </div>
+    </div>
+
+    <div class="event">
+      <h4 for="events">EVENTO</h4>
+      <select id="events" name="eventos">
+        <option value="choose option">Elige tu evento</option>
+        <option value="birthday">Cumpleaños</option>
+        <option value="wedding">Boda</option>
+        <option value="Graduation">Graduación</option>
+        <option value="Party">Fiesta</option>
+      </select>
+    </div>
+  </div>
 </fieldset>

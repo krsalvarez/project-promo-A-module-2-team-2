@@ -1,0 +1,45 @@
+.fieldset1 {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border: none;
+}
+.form-design {
+  color: $color3;
+  background-color: $color5;
+}
+.colors {
+  margin: 10px;
+  border: none;
+  display: flex;
+
+  & img {
+    width: 120px;
+    border: 5px;
+  }
+}
+.colorPalettes {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  gap: 5px;
+}
+.event {
+  border: none;
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+  & select {
+    margin-top: 15px;
+    margin-right: 20px;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.icon {
+  transform: rotate(180deg);
+}
