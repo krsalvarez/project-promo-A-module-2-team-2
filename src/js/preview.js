@@ -28,5 +28,6 @@ function dateForm() {
 
 dateInput.addEventListener("change", dateForm);
 
+
 fillForm.addEventListener("input", handleForm);
 
