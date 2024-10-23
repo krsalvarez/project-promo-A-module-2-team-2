@@ -11,16 +11,16 @@ const dateInput = document.querySelector(".js-date")
 const fillName = document.querySelector(".js-fillName")
 const fillSurname = document.querySelector(".js-fillSurname")
 const fillDate = document.querySelector(".js-fillDate")
-const fillForm = document.querySelector(".js-fillForm")
+const fillForm = document.querySelector(".js-fill")
 
 function handleForm(event) {
     if (event.target.id === "firstName") {
         fillName.innerHTML = event.target.value;
-        }
-        else if (event.target.id === "surname") {
-            fillSurname.innerHTML = event.target.value;
-        }
-       
+    }
+    else if (event.target.id === "surname") {
+        fillSurname.innerHTML = event.target.value;
+    }
+
 }
 function dateForm() {
     fillDate.innerHTML = dateInput.value;
@@ -29,3 +29,4 @@ function dateForm() {
 dateInput.addEventListener("change", dateForm);
 
 fillForm.addEventListener("input", handleForm);
+
