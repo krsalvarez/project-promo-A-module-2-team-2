@@ -7,6 +7,7 @@
 .form-design {
   color: $color3;
   background-color: $color5;
+  width: 15em;
 }
 .colors {
   margin: 10px;
@@ -33,6 +34,7 @@
   & select {
     margin-top: 15px;
     margin-right: 20px;
+    background-color: $color3;
   }
 }
 
