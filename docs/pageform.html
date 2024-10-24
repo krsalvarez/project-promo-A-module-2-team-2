@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>U're invited</title>
+
+    
+    <link
+      href="https://fontawesome.com/icons/angle-down?f=classic&s=solid"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Princess+Sofia&family=Roboto+Slab:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/68903870fe.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./assets/main-c6fcd5fb.css">
+  </head>
+  <body class="body">
+    <header class="header">
+    
+    <div class="logo">
+        <a href="#index_body">
+        <img src="./images/logo-blue.png" alt="logo del equipo" class="logo__icon">
+        </a>
+    </div>
+    
+</header>
+    <div class="main-pageform">
+      <div class="form-pf">
+        <form class="form js-form" action="">
+  <fieldset class="fieldset1">
+  <h3 class="form-design js-design">
+    DISEÑO <i class="fa-solid fa-angle-down js-arrow"></i>
+  </h3>
+
+  <div class="hidden js-collapse">
+    <div class="colors">
+      <h4 for="colors">COLORES</h4>
+      <div class="colorPalettes">
+        <label>
+          <input id="palette1" type="radio" value="palette1" name="palette" />
+          <img src="./images/palette1.jpg" alt="paleta 1" />
+        </label>
+        <label>
+          <input id="palette2" type="radio" value="palette2" name="palette" />
+          <img src="./images/palette2.jpg" alt="paleta 2" />
+        </label>
+        <label>
+          <input id="palette3" type="radio" value="palette3" name="palette" />
+          <img src="./images/palette3.jpg" alt="paleta 3" />
+        </label>
+      </div>
+    </div>
+
+    <div class="event">
+      <h4 for="events">EVENTO</h4>
+      <select id="events" name="eventos">
+        <option value="choose option">Elige tu evento</option>
+        <option value="birthday">Cumpleaños</option>
+        <option value="wedding">Boda</option>
+        <option value="Graduation">Graduación</option>
+        <option value="Party">Fiesta</option>
+      </select>
+    </div>
+  </div>
+</fieldset>
+
+  <fieldset class="fieldset-rellena">
+  <legend class="legend">
+    <h3 class="js-formFill">
+      RELLENA <i class="fa-solid fa-angle-down js-arrow-fill"></i>
+    </h3>
+  </legend>
+
+  <div class="fill hidden js-fill">
+    <label class="form-labels" for="firstName">NOMBRE</label>
+    <input
+      class="input"
+      placeholder="Ej. Homer"
+      type="text"
+      id="firstName"
+      name="firstName"
+      required
+    />
+    <label class="form-labels js-formSurname" for="surname">¿DÓNDE SERÁ?</label>
+    <input
+      class="input"
+      placeholder="Ej. Springfield"
+      type="text"
+      id="surname"
+      name="surname"
+    />
+    <label class="form-labels" for="date">CUANDO SERÁ TU EVENTO?</label>
+    <input
+      class="input js-date"
+      type="datetime-local"
+      id="date"
+      name="date-of-event"
+      min="2024-01-01"
+      max="2035-01-01"
+    />
+    <label class="form-labels label-avatar" for="imageUpload"> SUBE TU IMAGEN </label>
+    <input
+      class="input-avatar js__profile-upload-btn"
+      type="file"
+      id="imageUpload"
+      name="imageUpload"
+      accept="image/*"
+    />
+    <div class="image-container js__profile-image"></div>
+  </div>
+  <div class="buttons js-reset">
+    <button class="restartButton" type="reset">Reset ⭮</button>
+  </div>
+</fieldset>
+
+</form>
+
+      </div>
+      <div class="aside-pf">
+        <aside class="preview-container">
+    <h3 class="title">Previsualización</h3>
+    <button type="button" class="button-reset">Crear</button>
+    <div class="invitation">
+        <div class="image-preview js__profile-preview"></div>
+        <p class="name js-fillName">Nombre</p>
+        <p class="surname js-fillSurname">Lugar</p>
+        <p class="date js-fillDate">Fecha y hora</p>
+        
+    </div>
+    
+</aside>
+      </div>
+    </div>
+    <div class="footer-container">
+      <footer class="footer">
+  <img
+    class="footer_container_img"
+    src="./images/logo-light-blue.png"
+    alt="Imagen logotipo"
+  />
+  <div class="footer_container_icon">
+  <i class="footer_container_fa fa-brands fa-facebook"></i>
+  <i class="footer_container_ins fa-brands fa-instagram"></i>
+  <i class="footer_container_link fa-brands fa-linkedin"></i>
+</div>
+</footer>
+
+    </div>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
