@@ -2,16 +2,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-left: 1rem;
-  padding-right: 1.5rem;
   background-color: $color4;
-  padding-top: 3%;
-  padding-bottom: 3%;
-  margin-top: 4rem;
+  padding: 10px;
   filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.6));
-  &_img {
-    width: 2.5rem;
-  }
+  
+
   &_copyright {
     color: $color1;
     font-family: $font-main;
@@ -25,7 +20,7 @@
     z-index: 10;
   }
   &_container_img {
-    width: 2.5rem;
+    width: 1.5rem;
     @media (min-width: 1024px) {
       scale: 2;
       margin-left: 3rem;
