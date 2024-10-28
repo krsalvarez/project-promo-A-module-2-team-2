@@ -1,18 +1,16 @@
 .index_body{
-    height: 100vh;
-    background-color: $color3;
     background-image: repeating-linear-gradient(
         -45deg,
-        $color3 0px,
-        $color3 20px,
-        $color4 20px,
-        $color4 40px,
+        rgba(253, 252, 220, 0.7) 0px,
+        rgba(253, 252, 220, 0.7) 20px,
+        rgba(254, 217, 183, 0.7) 20px,
+        rgba(254, 217, 183, 0.7) 40px,
     );
     font-family: $font-main;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-   
+    justify-content: space-between;
+    
 }
 .fa-palette{
     color: $color1;
@@ -40,15 +38,34 @@
     flex-direction: column;
     align-items: center;
     gap: 1.5rem;
+    margin-top: 2rem;
+    height: 90vh;
+    
     @media (min-width:600px){
         height: 100vh;
         justify-content: center; 
         gap: 2rem;
     }
+&_explanation{
+    font-family: $font-main;
+    text-align: center;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    color: $color1;
+   }
+&_firstTitle{
+    font-family: $font-main;
+    font-size: 2rem;
+    text-align: center;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    color: $color1;
+    font-weight: bold;
+   }
    
 
 &_logo  {
-    width: 10rem;
+    width: 6rem;
     &_img{
         width: 100%;  
         filter: drop-shadow(0 0 10px rgba(0, 0, 0, .6));
@@ -56,17 +73,16 @@
 }
 &_title {
     color: $color1;
-    font-size: 2.5rem;
-    
+    font-size: 2.5rem; 
 
 }
 &_grid{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 3.5rem 3.5rem 3.5rem;
     background-color: $color4;
-    padding: 0.6rem;
+    padding: 0.2rem;
     border-radius: 1rem;
-    gap: 0.5rem;
+    gap: 0.2rem;
     color: $color1;
     font-weight: bold;
     filter: drop-shadow(0 0 10px rgba(0, 0, 0, .6));
@@ -86,6 +102,7 @@
         justify-content: center;
         align-items: center; 
         gap: 0.5rem;
+        scale: 0.7;
         @media(min-width: 1024px){
            gap: 2rem;
          }
@@ -96,6 +113,7 @@
         justify-content: center;
         align-items: center; 
         gap: 0.5rem;
+        scale: 0.7;
         @media(min-width: 1024px){
             gap: 2rem;
           }
@@ -106,6 +124,7 @@
         justify-content: center;
         align-items: center; 
         gap: 0.5rem;
+        scale: 0.7;
         @media(min-width: 1024px){
             gap: 2rem;
           }
@@ -126,7 +145,11 @@
     color: $color3;
     font-weight: bold;
     font-size: 1.2rem;
+    margin-top: 2rem;
     filter: drop-shadow(0 0 10px rgba(0, 0, 0, .6));
+    position: fixed;
+    bottom: 70px;
+    z-index: 10;
     @media(min-width: 600px){
         scale: 2;
         margin-top: 2rem;
@@ -137,5 +160,47 @@
      }
 
 }
+}
+
+.aside{
+    background-color: $color4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.slogan{
+    color: $color3;
+    background-color: $color1 ;
+    width: 70%;
+    margin-top: 3rem;
+    padding: 2rem;
+    text-align: center;
+
+}
+
+.example{
+    margin-top: 3rem;
+    width: 262px;
+    height: 147px;
+    rotate: 30deg;
+    &_img{
+        width: 100%;
+        height: 100%;
+    } 
+}
+
+.example_2{
+    transform: translateY(-50px);
+    margin-bottom: 3rem;
+    width: 262px;
+    height: 147px;
+    background-color: white;
+    rotate: -15deg;
+    &_img{
+        width: 100%;
+        height: 100%;
+    } 
 }
 
