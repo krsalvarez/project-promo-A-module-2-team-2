@@ -1,6 +1,11 @@
+.section_footer {
+  position: sticky;
+  width: 100dvw;
+}
+
 .footer {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   background-color: $color4;
   padding: 10px;
