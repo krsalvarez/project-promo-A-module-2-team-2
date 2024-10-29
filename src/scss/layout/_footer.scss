@@ -5,7 +5,7 @@
 
 .footer {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   background-color: $color4;
   padding: 10px;
@@ -28,7 +28,7 @@
     width: 1.5rem;
     @media (min-width: 1024px) {
       scale: 1.5;
-      margin-left: 3rem;
+      margin-left: 2rem;
     }
   }
 
@@ -45,7 +45,26 @@
     }
   }
 
-  &_container_fa {
-    color: $color1;
-  }
+}
+
+.footer_container_icon a {
+  transition: transform 0.3s, color 0.3s; /* Smooth transition for color and scale */
+}
+
+.footer_container_icon a:hover {
+  color: $color1; /* Change to your desired color on hover */
+  transform: scale(1.2); /* Increase size by 20% on hover */
+}
+
+/* Specific color for each icon by default */
+.footer_container_fa {
+  color: #3b5998; /* Facebook icon color */
+}
+
+.footer_container_ins {
+  color: #E4405F; /* Instagram icon color */
+}
+
+.footer_container_link {
+  color: #0077b5; /* LinkedIn icon color */
 }
