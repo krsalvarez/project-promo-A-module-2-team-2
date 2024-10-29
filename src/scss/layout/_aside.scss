@@ -21,6 +21,9 @@
   align-items: center;
   justify-content: center;
 }
+.body {
+  background-color: rgb(195, 252, 233);
+}
 
 .js__profile-image,
 .js__profile-preview {
@@ -39,9 +42,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: white;
   border: solid 5px $color2;
   border-radius: 5%;
-  background-color: rgb(234, 243, 255);
   margin-left: 5px;
 }
 
@@ -57,4 +60,30 @@
 
 .date {
   font-size: 23px;
+}
+
+
+.btn {
+  background-color: white;
+  color: black; /* Texto negro */
+  border: 2px solid black;
+  margin-top: 25px;
+  padding: 7px 14px; /* Espaciado interno */
+  font-size: 16px; /* Tamaño de fuente */
+  font-weight: bold; /* Negrita */
+  text-transform: uppercase; /* Texto en mayúsculas */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  transition: background-color 0.3s, color 0.3s; /* Transiciones suaves */
+  border-radius: 15px; /* Bordes redondeados */
+  outline: none;  /*Elimina el borde de enfoque */
+  text-align: center; /* Centrar el texto */
+}
+
+.btn:hover {
+  background-color: black; /* Cambia el fondo a negro al pasar el mouse */
+  color: white; /* Cambia el texto a blanco */
+}
+
+.btn:active {
+  background-color: gray; /* Cambia a gris al hacer clic */
 }
