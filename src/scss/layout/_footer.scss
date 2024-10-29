@@ -27,7 +27,7 @@
   &_container_img {
     width: 1.5rem;
     @media (min-width: 1024px) {
-      scale: 2;
+      scale: 1.5;
       margin-left: 3rem;
     }
   }
@@ -40,7 +40,7 @@
     gap: 1rem;
     color: $color1;
     @media (min-width: 1024px) {
-      scale: 2;
+      scale: 1.5;
       margin-right: 3rem;
     }
   }
