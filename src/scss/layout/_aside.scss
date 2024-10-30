@@ -14,6 +14,8 @@
   background-color: $color5;
   text-transform: uppercase;
   margin: 10px;
+  padding: 5px;
+  border-radius: 5px;
 }
 .preview-container {
   display: flex;
@@ -62,6 +64,45 @@
   font-size: 23px;
 }
 
+.color-borde1 {
+  border: 5px solid rgb(226, 197, 119);
+}
+.color-borde2 {
+  border: 5px solid rgb(252, 250, 227);
+}
+.color-borde3 {
+  border: 5px solid rgb(237, 204, 223);
+}
+
+.color-nombre1 {
+  color: rgb(46, 70, 82);
+}
+.color-nombre2 {
+  color: rgb(204, 165, 122);
+}
+.color-nombre3 {
+  color: rgb(172, 167, 199);
+}
+
+.color-lugar1 {
+  color: rgb(79, 155, 143);
+}
+.color-lugar2 {
+  color: rgb(247, 238, 209);
+}
+.color-lugar3 {
+  color: rgb(210, 186, 210);
+}
+
+.color-fecha-hora1 {
+  color: rgb(79, 155, 143);
+}
+.color-fecha-hora2 {
+  color: rgb(247, 238, 209);
+}
+.color-fecha-hora3 {
+  color: rgb(210, 186, 210);
+}
 
 .btn {
   background-color: white;
