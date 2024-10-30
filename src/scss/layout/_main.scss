@@ -11,7 +11,7 @@
     flex-direction: column;
     justify-content: space-between;
     @media (min-width:1024px){
-        
+        justify-content: center;
         }  
   
 }
@@ -64,8 +64,8 @@
         width: 50vw; 
         padding-top: 3%;
         margin-top: 0;
-        gap: 0.7rem;
         height: 85vh;
+        justify-content: center;
         
     }
 
