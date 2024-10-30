@@ -1,20 +1,33 @@
 header {
   display: flex;
-  justify-content: space-between;
   position: sticky;
   background-color: $color4;
   width: 100%;
-  margin-top: 0;
+  justify-content: center;
+  align-content: center;
 }
 
 .logo {
-  top: 0;
-  left: 0;
   padding: 15px;
   padding-bottom: 10px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
 
     &__icon {
-      width: 25px;
-      height: 25px;
+      width: 35px;
+      height: 35px;
     }
+    a {
+      display: flex;
+      align-items: center;
+    }
+}
+
+h2 {
+  font-family: $font-main;
+  color: $color1;
+  margin-left: 8px;
+  align-items: center;
 }

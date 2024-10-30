@@ -1,5 +1,9 @@
 .body {
   width: 100%;
+  font-family: $font-main;
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
 }
 
 .main-pageform {
@@ -8,6 +12,7 @@
   align-items: center;
   justify-content: center;
   height: 100%;
+  flex: 1;
   @media (min-width: 600px) {
     flex-direction: row;
   }
@@ -38,6 +43,4 @@
   display: flex;
   align-items: center;
 }
-.footer-container {
-  position: sticky;
-}
+
