@@ -3,46 +3,58 @@
   flex-direction: column;
   border: none;
   padding: 10px;
+  margin-bottom: 40px;
+  @media (min-width: 600px) {
+    margin-bottom: 80px;
+  }
 
   h3 {
     color: $color3;
     background-color: $color5;
+    width: 15em;
   }
 }
 .fill {
   display: flex;
   flex-direction: column;
   margin: 10px;
+  font-weight: bold;
 }
 
 .input {
   align-self: flex-start;
-  background-color: $color4;
+  background-color: $color3;
   border: none;
 }
 
-.input-avatar{
+.input-avatar {
   display: none;
 }
 
-.label-avatar{
-  border: solid 1px;
-  background-color: $color5;
+.label-avatar {
+  border: 3px solid #f07167ff;
+  background-color: $color4;
+  color: $color5;
+  font-weight: bold;
   display: flex;
   align-self: flex-start;
-  padding: 2%;
-  border-radius: 15%;  
+  padding: 6px;
+  border-radius: 5px;
+  transition: transform 0.3s ease-in-out;
+}
+.label-avatar:hover {
+  background-color: $color5;
+  color: $color3;
+}
+.label-avatar:active {
+  transform: scale(0.9);
 }
 
-.image-container{
+.image-container {
   border: 2px solid;
   width: 50px;
   height: 50px;
 }
-
-// .legend {
-//   background-color: black;
-// }
 
 .form-labels {
   margin-top: 15px;

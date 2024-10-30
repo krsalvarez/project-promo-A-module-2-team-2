@@ -1,3 +1,14 @@
-const restartButton = document.querySelector(".js-restart");
+const restartButton = document.querySelector(".js-reset");
+const preview = document.querySelector(".preview-container");
 
-restartButton.getElementsByClassName(".js-form").reset();
+
+
+function resetClick() {
+    fillName.innerHTML = "Nombre"
+    fillSurname.innerHTML = "Apellido"
+    fillDate.innerHTML = "Fecha y hora"
+
+}
+
+restartButton.addEventListener("click", resetClick);
+
