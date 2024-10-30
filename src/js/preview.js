@@ -5,13 +5,14 @@
     -pintar en la tarjeta
 */
 
-const nameInput = document.querySelector(".js-formName")
-const surnameInput = document.querySelector(".js-formSurname")
-const dateInput = document.querySelector(".js-date")
-const fillName = document.querySelector(".js-fillName")
-const fillSurname = document.querySelector(".js-fillSurname")
-const fillDate = document.querySelector(".js-fillDate")
-const fillForm = document.querySelector(".js-fill")
+const nameInput = document.querySelector(".js-formName");
+const surnameInput = document.querySelector(".js-formSurname");
+const dateInput = document.querySelector(".js-date");
+const fillName = document.querySelector(".js-fillName");
+const fillSurname = document.querySelector(".js-fillSurname");
+const fillDate = document.querySelector(".js-fillDate");
+const fillForm = document.querySelector(".js-fill");
+
 
 function handleForm(event) {
     // if (event.target.id === "firstName") {
@@ -49,6 +50,24 @@ function dateForm(ev) {
 
 dateInput.addEventListener("change", dateForm);
 
-
 fillForm.addEventListener("input", handleForm);
+
+const eventPreview = document.querySelector(".js-eventPreview");
+const birthdayInput = document.querySelector(".js-birthdayEvent");
+const weddingInput = document.querySelector(".js-weddingEvent");
+const partyInput = document.querySelector(".js-partyEvent");
+
+function updateEvent(eventType){
+    eventPreview.className = 'invitation';
+    eventPreview.classList.add(eventType);
+}
+
+weddingInput.addEventListener("click",() => 
+    updateEvent('wedding_image_preview'));
+
+birthdayInput.addEventListener("click",() => 
+    updateEvent('birthday_image_preview'));
+
+partyInput.addEventListener("click",() => 
+    updateEvent('party_image_preview'));
 
