@@ -1,5 +1,5 @@
 .section_footer {
-  position: sticky;
+  position: absolute;
   width: 100dvw;
 }
 
@@ -8,7 +8,7 @@
   justify-content: space-between;
   align-items: center;
   background-color: $color4;
-  padding: 10px;
+  padding: 12px;
   filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.6));
 
   &_copyright {
@@ -28,22 +28,16 @@
     width: 1.5rem;
     @media (min-width: 1024px) {
       scale: 1.5;
-      margin-left: 2rem;
     }
   }
 
   &_container_icon {
     display: flex;
-    align-items: flex-end;
-    justify-items: flex-end;
     justify-content: space-between;
     align-items: center;
-    padding-left: 1rem;
-    padding-right: 1.5rem;
+    gap: 8px;
     background-color: $color4;
-    padding-top: 3%;
-    padding-bottom: 3%;
-    filter: drop-shadow(0 0 10px rgba(0, 0, 0, .6));
+    
     &_img{
         width: 2.5rem;
       
@@ -89,13 +83,16 @@
 
 /* Specific color for each icon by default */
 .footer_container_fa {
-  color: #3b5998; /* Facebook icon color */
+  color: #3b5998;/* Facebook icon color */
+  font-size: 20px; 
 }
 
 .footer_container_ins {
   color: #E4405F; /* Instagram icon color */
+  font-size: 20px; 
 }
 
 .footer_container_link {
   color: #0077b5; /* LinkedIn icon color */
+  font-size: 20px; 
 }
