@@ -10,7 +10,6 @@
   background-color: $color4;
   padding: 10px;
   filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.6));
-  
 
   &_copyright {
     color: $color1;
@@ -38,7 +37,6 @@
     align-items: flex-end;
     justify-items: flex-end;
     justify-content: space-between;
-<<<<<<< HEAD
     align-items: center;
     padding-left: 1rem;
     padding-right: 1.5rem;
@@ -69,13 +67,12 @@
             scale: 2;
             margin-left: 3rem;
           }
-=======
     gap: 1rem;
     color: $color1;
     @media (min-width: 1024px) {
       scale: 1.5;
       margin-right: 3rem;
->>>>>>> dev
+    }
     }
   }
 
