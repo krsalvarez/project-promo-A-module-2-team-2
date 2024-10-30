@@ -128,3 +128,24 @@
 .btn:active {
   background-color: gray; /* Cambia a gris al hacer clic */
 }
+
+.wedding_image_preview {
+  background-image: url("/images/fondo\ boda.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.birthday_image_preview {
+  background-image: url("/images/fondo\ cumpleaños.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.party_image_preview {
+  background-image: url("/images/fondo\ fiesta.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}

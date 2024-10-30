@@ -22,15 +22,25 @@
       </div>
     </div>
 
-    <div class="event">
-      <h4 for="events">EVENTO</h4>
-      <select id="events" name="eventos">
-        <option value="choose option">Elige tu evento</option>
-        <option value="birthday">Cumpleaños</option>
-        <option value="wedding">Boda</option>
-        <option value="Graduation">Graduación</option>
-        <option value="Party">Fiesta</option>
-      </select>
+    <div class="events">
+    <h4 for="events">EVENTO</h4>
+      <div class="eventsOptions">  
+
+          <label class="eventLabel" for="event1">
+          <input class="js-birthdayEvent" id="event1" type="radio" value="event1" name="event" />
+          Cumpleaños  
+          </label>
+
+          <label class="eventLabel" for="event2">
+          <input class="js-weddingEvent" id="event2" type="radio" value="event2" name="event" />
+          Boda  
+          </label>
+
+          <label class="eventLabel" for="event3">
+          <input class="js-partyEvent" id="event3" type="radio" value="event3" name="event" />
+          Fiesta  
+          </label>
+
+      </div>
     </div>
-  </div>
 </fieldset>
