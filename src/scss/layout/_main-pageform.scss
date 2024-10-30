@@ -1,8 +1,9 @@
 .body {
+  width: 100%;
+  font-family: $font-main;
   display: flex;
   flex-direction: column;
   min-height: 100dvh;
-  width: 100dvw;
 }
 
 .main-pageform {
