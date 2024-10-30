@@ -1,5 +1,5 @@
 .section_footer {
-  position: sticky;
+  position: absolute;
   width: 100dvw;
 }
 
@@ -8,9 +8,8 @@
   justify-content: space-between;
   align-items: center;
   background-color: $color4;
-  padding: 10px;
+  padding: 12px;
   filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.6));
-  
 
   &_copyright {
     color: $color1;
@@ -29,20 +28,45 @@
     width: 1.5rem;
     @media (min-width: 1024px) {
       scale: 1.5;
-      margin-left: 2rem;
     }
   }
 
   &_container_icon {
     display: flex;
-    align-items: flex-end;
-    justify-items: flex-end;
     justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    background-color: $color4;
+    
+    &_img{
+        width: 2.5rem;
+      
+        
+    }
+    &_copyright{
+        color: $color1;
+        font-family: $font-main;
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
+    &_icon{
+        width: 3rem;
+        height: 3rem;
+        color: $color1;
+        z-index: 10;
+    }
+    &_container_img{
+        width: 2.5rem;
+        @media(min-width: 1024px){
+            scale: 2;
+            margin-left: 3rem;
+          }
     gap: 1rem;
     color: $color1;
     @media (min-width: 1024px) {
       scale: 1.5;
       margin-right: 3rem;
+    }
     }
   }
 
@@ -59,13 +83,16 @@
 
 /* Specific color for each icon by default */
 .footer_container_fa {
-  color: #3b5998; /* Facebook icon color */
+  color: #3b5998;/* Facebook icon color */
+  font-size: 20px; 
 }
 
 .footer_container_ins {
   color: #E4405F; /* Instagram icon color */
+  font-size: 20px; 
 }
 
 .footer_container_link {
   color: #0077b5; /* LinkedIn icon color */
+  font-size: 20px; 
 }
