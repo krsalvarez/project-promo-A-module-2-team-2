@@ -8,8 +8,10 @@
   color: $color3;
   background-color: $color5;
   width: 15em;
-  padding: 5px;
+  padding: 10px;
   border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
 }
 .colors {
   margin: 10px;
