@@ -58,7 +58,7 @@ const weddingInput = document.querySelector(".js-weddingEvent");
 const partyInput = document.querySelector(".js-partyEvent");
 
 function updateEvent(eventType){
-    eventPreview.className = 'invitation';
+    eventPreview.classList.remove("wedding_image_preview","birthday_image_preview", "party_image_preview");
     eventPreview.classList.add(eventType);
 }
 
