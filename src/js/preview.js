@@ -26,6 +26,7 @@ function handleForm(event) {
             fillName.innerHTML = "Nombre"; // Texto predeterminado si está vacío
         } else {
             fillName.innerHTML = event.target.value; // Texto ingresado por la usuaria
+            dataForm.field2 = event.target.value;
         }
     }
     if (event.target.id === "surname") {
@@ -33,8 +34,9 @@ function handleForm(event) {
             fillSurname.innerHTML = "Lugar"; // Texto predeterminado si está vacío
         } else {
             fillSurname.innerHTML = event.target.value; // Texto ingresado por la usuaria
+            dataForm.field3 = event.target.value;
         }
-    }
+    }  
 }
 
 function dateForm(ev) {
@@ -44,9 +46,12 @@ function dateForm(ev) {
             fillDate.innerHTML = "Fecha y hora";
         } else {
             fillDate.innerHTML = dateInput.value;
+            dataForm.field4 = dateInput.value;
         }
-    }
+    } 
 }
+
+
 
 dateInput.addEventListener("change", dateForm);
 
@@ -56,10 +61,14 @@ const eventPreview = document.querySelector(".js-eventPreview");
 const birthdayInput = document.querySelector(".js-birthdayEvent");
 const weddingInput = document.querySelector(".js-weddingEvent");
 const partyInput = document.querySelector(".js-partyEvent");
+const eventsOptions = document.querySelector(".js-eventsOptions");
 
 function updateEvent(eventType){
     eventPreview.classList.remove("wedding_image_preview","birthday_image_preview", "party_image_preview");
     eventPreview.classList.add(eventType);
+    dataForm.field5 = eventType.target.value;
+
+    console.log(dataForm);
 }
 
 weddingInput.addEventListener("click",() => 
