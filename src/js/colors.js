@@ -1,4 +1,3 @@
-
     const previsualizacion = document.getElementById("previsualizacion");
     const nombre = previsualizacion.querySelector(".name");
     const lugar = previsualizacion.querySelector(".surname");
