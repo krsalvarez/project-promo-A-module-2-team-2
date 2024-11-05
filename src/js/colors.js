@@ -5,7 +5,7 @@
     const palettes = document.getElementsByName("palette");
   
     palettes.forEach((palette) => {
-        palette.addEventListener("change", function() {
+        palette.addEventListener("change", function(event) {
           // Eliminar las clases de color actuales
           previsualizacion.classList.remove("color-borde1", "color-borde2", "color-borde3");
           nombre.classList.remove("color-nombre1", "color-nombre2", "color-nombre3");
@@ -29,5 +29,6 @@
             lugar.classList.add("color-lugar3");
             fechaHora.classList.add("color-fecha-hora3");
           }
+          console.log(event.target.value);
         });
       });

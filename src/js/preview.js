@@ -36,7 +36,8 @@ function handleForm(event) {
             fillSurname.innerHTML = event.target.value; // Texto ingresado por la usuaria
             dataForm.field3 = event.target.value;
         }
-    }  
+    } 
+    // console.log(dataForm); 
 }
 
 function dateForm(ev) {
@@ -63,20 +64,26 @@ const weddingInput = document.querySelector(".js-weddingEvent");
 const partyInput = document.querySelector(".js-partyEvent");
 const eventsOptions = document.querySelector(".js-eventsOptions");
 
-function updateEvent(eventType){
+function updateEvent(nameClass){
     eventPreview.classList.remove("wedding_image_preview","birthday_image_preview", "party_image_preview");
-    eventPreview.classList.add(eventType);
-    dataForm.field5 = eventType.target.value;
+    eventPreview.classList.add(nameClass);
+    
 
     console.log(dataForm);
 }
 
-weddingInput.addEventListener("click",() => 
-    updateEvent('wedding_image_preview'));
+function handleClickWedding(event){
+    console.log("click en wedding");
+    console.log(event.target.value); 
+    dataForm.field5 = event.target.value;
+    updateEvent("wedding_image_preview");
+}
 
-birthdayInput.addEventListener("click",() => 
+weddingInput.addEventListener("click", handleClickWedding);
+
+birthdayInput.addEventListener("click",(event) => 
     updateEvent('birthday_image_preview'));
 
-partyInput.addEventListener("click",() => 
+partyInput.addEventListener("click",(event) => 
     updateEvent('party_image_preview'));
 
