@@ -6,7 +6,6 @@
   
     palettes.forEach((palette) => {
         palette.addEventListener("change", function(event) {
-          console.log(event.target.value);
           dataForm.field1 = parseInt(event.target.value, 10); // el 10 asegura que parseInt trate el valor estrictamente como un número decimal
 
           // Eliminar las clases de color actuales
@@ -17,14 +16,14 @@
         
 
           // Añadir las clases correspondientes en función de la paleta seleccionada
-          if (palette.checked && palette.value === 1) {
+          if (palette.checked && parseInt(palette.value, 10) === 1) {
             previsualizacion.classList.add("color-borde1");
             nombre.classList.add("color-nombre1");
             lugar.classList.add("color-lugar1");
             fechaHora.classList.add("color-fecha-hora1");
             
 
-          } else if (palette.checked && palette.value === 2) {
+          } else if (palette.checked && parseInt(palette.value, 10) === 2) {
             previsualizacion.classList.add("color-borde2");
             nombre.classList.add("color-nombre2");
             lugar.classList.add("color-lugar2");
@@ -32,7 +31,7 @@
             
             
 
-          } else if (palette.checked && palette.value === 3) {
+          } else if (palette.checked && parseInt(palette.value, 10) === 3) {
             previsualizacion.classList.add("color-borde3");
             nombre.classList.add("color-nombre3");
             lugar.classList.add("color-lugar3");

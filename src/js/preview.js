@@ -68,8 +68,6 @@ function updateEvent(nameClass){
     eventPreview.classList.remove("wedding_image_preview","birthday_image_preview", "party_image_preview");
     eventPreview.classList.add(nameClass);
     
-
-    console.log(dataForm);
 }
 
 function handleClickWedding(event){
