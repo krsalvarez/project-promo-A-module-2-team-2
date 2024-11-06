@@ -81,9 +81,21 @@ function handleClickWedding(event){
 
 weddingInput.addEventListener("click", handleClickWedding);
 
-birthdayInput.addEventListener("click",(event) => 
-    updateEvent('birthday_image_preview'));
+function handleClickBirthday(event){
+    console.log("click en birthday");
+    console.log(event.target.value); 
+    dataForm.field5 = event.target.value;
+    updateEvent("birthday_image_preview");
+}
 
-partyInput.addEventListener("click",(event) => 
-    updateEvent('party_image_preview'));
+birthdayInput.addEventListener("click", handleClickBirthday);
+
+function handleClickParty(event){
+    console.log("click en birthday");
+    console.log(event.target.value); 
+    dataForm.field5 = event.target.value;
+    updateEvent("party_image_preview");
+}
+
+partyInput.addEventListener("click", handleClickParty);
 
