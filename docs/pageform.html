@@ -10,6 +10,10 @@
       href="https://fontawesome.com/icons/angle-down?f=classic&s=solid"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://fontawesome.com/icons/angle-up?f=classic&s=solid"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -20,14 +24,15 @@
       src="https://kit.fontawesome.com/68903870fe.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="./assets/main-c6fcd5fb.css">
+    <link rel="stylesheet" href="./assets/main-d1d8c726.css">
   </head>
   <body class="body">
     <header class="header">
     
     <div class="logo">
-        <a href="#index_body">
+        <a href="https://krsalvarez.github.io/project-promo-A-module-2-team-2/">
         <img src="./images/logo-blue.png" alt="logo del equipo" class="logo__icon">
+        <h2> U're Invited </h2>
         </a>
     </div>
     
@@ -37,39 +42,49 @@
         <form class="form js-form" action="">
   <fieldset class="fieldset1">
   <h3 class="form-design js-design">
-    DISEÑO <i class="fa-solid fa-angle-down js-arrow"></i>
+    DISEÑO <i class="fa-solid arrowdesign fa-angle-up js-arrow"></i>
   </h3>
 
-  <div class="hidden js-collapse">
+  <div class="js-collapse">
     <div class="colors">
       <h4 for="colors">COLORES</h4>
       <div class="colorPalettes">
         <label>
-          <input id="palette1" type="radio" value="palette1" name="palette" />
+          <input id="palette1" type="radio" value="1" name="palette" />
           <img src="./images/palette1.jpg" alt="paleta 1" />
         </label>
         <label>
-          <input id="palette2" type="radio" value="palette2" name="palette" />
+          <input id="palette2" type="radio" value="2" name="palette" />
           <img src="./images/palette2.jpg" alt="paleta 2" />
         </label>
         <label>
-          <input id="palette3" type="radio" value="palette3" name="palette" />
+          <input id="palette3" type="radio" value="3" name="palette" />
           <img src="./images/palette3.jpg" alt="paleta 3" />
         </label>
       </div>
     </div>
 
-    <div class="event">
-      <h4 for="events">EVENTO</h4>
-      <select id="events" name="eventos">
-        <option value="choose option">Elige tu evento</option>
-        <option value="birthday">Cumpleaños</option>
-        <option value="wedding">Boda</option>
-        <option value="Graduation">Graduación</option>
-        <option value="Party">Fiesta</option>
-      </select>
+    <div class="events">
+    <h4 for="events">EVENTO</h4>
+      <div class="eventsOptions">  
+
+          <label class="eventLabel" for="event1">
+          <input class="js-eventsOptions js-birthdayEvent" id="event1" type="radio" value="event1" name="event" />
+          Cumpleaños  
+          </label>
+
+          <label class="eventLabel" for="event2">
+          <input class="js-eventsOptions js-weddingEvent" id="event2" type="radio" value="event2" name="event" />
+          Boda  
+          </label>
+
+          <label class="eventLabel" for="event3">
+          <input class="js-eventsOptions js-partyEvent" id="event3" type="radio" value="event3" name="event" />
+          Fiesta  
+          </label>
+
+      </div>
     </div>
-  </div>
 </fieldset>
 
   <fieldset class="fieldset-rellena">
@@ -106,7 +121,9 @@
       min="2024-01-01"
       max="2035-01-01"
     />
-    <label class="form-labels label-avatar" for="imageUpload"> SUBE TU IMAGEN </label>
+    <label class="form-labels label-avatar" for="imageUpload">
+      SUBE TU IMAGEN
+    </label>
     <input
       class="input-avatar js__profile-upload-btn"
       type="file"
@@ -128,29 +145,44 @@
         <aside class="preview-container">
     <h3 class="title">Previsualización</h3>
     <button type="button" class="button-reset">Crear</button>
-    <div class="invitation">
+    <div class="invitation js-eventPreview" id="previsualizacion">
         <div class="image-preview js__profile-preview"></div>
         <p class="name js-fillName">Nombre</p>
         <p class="surname js-fillSurname">Lugar</p>
         <p class="date js-fillDate">Fecha y hora</p>
         
     </div>
-    
+    <button class="btn">Comparte en X</button>
 </aside>
       </div>
     </div>
-    <div class="footer-container">
-      <footer class="footer">
-  <img
-    class="footer_container_img"
-    src="./images/logo-light-blue.png"
-    alt="Imagen logotipo"
-  />
-  <div class="footer_container_icon">
-  <i class="footer_container_fa fa-brands fa-facebook"></i>
-  <i class="footer_container_ins fa-brands fa-instagram"></i>
-  <i class="footer_container_link fa-brands fa-linkedin"></i>
-</div>
+    <div>
+      <footer class="section_footer">
+  <div class="footer-2">
+    <div>
+        <img
+        class="footer_container_img"
+        src="./images/logo-blue.png"
+        alt="Imagen logotipo"
+        />
+    </div>
+
+    <div>
+        <p>&copy; <span id="year"></span> U're Invited. All Rights Reserved.</p>
+    </div>
+    
+    <div class="footer_container_icon">
+      <a href="https://www.facebook.com/AdalabDigital" target="_blank" class="footer_container_fa">
+        <i class="fa-brands fa-facebook"></i>
+      </a>
+      <a href="https://www.instagram.com/adalab_digital/" target="_blank" class="footer_container_ins">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+      <a href="https://www.linkedin.com/school/adalab/" target="_blank" class="footer_container_link">
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
+    </div>
+  </div>
 </footer>
 
     </div>
