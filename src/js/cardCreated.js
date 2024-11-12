@@ -6,8 +6,9 @@ const nameCard = document.querySelector(".js-fillName");
 const locationCard = document.querySelector(".js-fillSurname");
 const dateCard = document.querySelector(".js-fillDate");
 const imageCard = document.querySelector('.js__profile-preview');
-const eventCard = document.querySelector(".js-eventPreview");
-const paletteCard = document.getElementById("previsualizacion");
+// const eventCard = document.querySelector(".js-eventPreview");
+// const paletteCard = document.getElementById("previsualizacion");
+
 
 
 fetch(`https://dev.adalab.es/api/info/${id}`)
@@ -19,8 +20,5 @@ fetch(`https://dev.adalab.es/api/info/${id}`)
         locationCard.innerHTML = cardData.field3;
         dateCard.innerHTML = cardData.field4;
         imageCard.src = cardData.photo;
-        eventCard.style = cardData.field5;
-        paletteCard.style = cardData.field1;
-
-
+        // eventCard.style = cardData.field5;
     })
