@@ -33,7 +33,9 @@ function writeImage() {
    */
   profileImage.style.backgroundImage = `url(${fr.result})`;
   profilePreview.style.backgroundImage = `url(${fr.result})`;
-  dataForm.photo = fr.result;
+  //pusimos slice para truncar la URL porque la API no recoge mas de 100 caracteres
+
+  dataForm.photo = fr.result.slice(0, 100);
 }
 
 

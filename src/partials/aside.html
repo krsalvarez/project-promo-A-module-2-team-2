@@ -1,12 +1,17 @@
 <aside class="preview-container">
-    <h3 class="title">Previsualización</h3>
-    <button type="button" class="button-reset">Crear</button>
-    <div class="invitation js-eventPreview" id="previsualizacion">
-        <div class="image-preview js__profile-preview"></div>
-        <p class="name js-fillName">Nombre</p>
-        <p class="surname js-fillSurname">Lugar</p>
-        <p class="date js-fillDate">Fecha y hora</p>
-        
-    </div>
-    <button class="btn">Comparte en X</button>
+  <h3 class="title">Previsualización</h3>
+  <div class="invitation js-eventPreview" id="previsualizacion">
+    <div class="image-preview js__profile-preview"></div>
+    <p class="name js-fillName">Nombre</p>
+    <p class="surname js-fillSurname">Lugar</p>
+    <p class="date js-fillDate">Fecha y hora</p>
+  </div>
+  <div class="btns-aside">
+    <button class="btn js-share">Comparte en X</button>
+    <a class="hidden showCard js-showCard" href="">
+      <p>Ver tarjeta</p>
+    </a>
+  </div>
 </aside>
+
+<script src="./js/toShare.js"></script>
