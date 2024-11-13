@@ -24,7 +24,7 @@
       src="https://kit.fontawesome.com/68903870fe.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="./assets/main-d1d8c726.css">
+    <link rel="stylesheet" href="./assets/main-c5316462.css">
   </head>
   <body class="body">
     <header class="header">
@@ -39,7 +39,7 @@
 </header>
     <div class="main-pageform">
       <div class="form-pf">
-        <form class="form js-form" action="">
+        <form class="form js-form" action="" onsubmit="handleFormSubmit(event)">
   <fieldset class="fieldset1">
   <h3 class="form-design js-design">
     DISEÑO <i class="fa-solid arrowdesign fa-angle-up js-arrow"></i>
@@ -136,6 +136,9 @@
   <div class="buttons js-reset">
     <button class="restartButton" type="reset">Reset ⭮</button>
   </div>
+  <div>
+    <button type="button" class="button-reset js-create">Crear</button>
+  </div>
 </fieldset>
 
 </form>
@@ -143,31 +146,33 @@
       </div>
       <div class="aside-pf">
         <aside class="preview-container">
-    <h3 class="title">Previsualización</h3>
-    <button type="button" class="button-reset">Crear</button>
-    <div class="invitation js-eventPreview" id="previsualizacion">
-        <div class="image-preview js__profile-preview"></div>
-        <p class="name js-fillName">Nombre</p>
-        <p class="surname js-fillSurname">Lugar</p>
-        <p class="date js-fillDate">Fecha y hora</p>
-        
-    </div>
-    <button class="btn">Comparte en X</button>
+  <h3 class="title">Previsualización</h3>
+  <div class="invitation js-eventPreview" id="previsualizacion">
+    <div class="image-preview js__profile-preview"></div>
+    <p class="name js-fillName">Nombre</p>
+    <p class="surname js-fillSurname">Lugar</p>
+    <p class="date js-fillDate">Fecha y hora</p>
+  </div>
+  <div class="btns-aside">
+    <button class="btn js-share">Comparte en X</button>
+    <a class="hidden showCard js-showCard" href="">
+      <p>Ver tarjeta</p>
+    </a>
+  </div>
 </aside>
+
+<script src="./js/toShare.js"></script>
+
       </div>
     </div>
     <div>
       <footer class="section_footer">
-  <div class="footer-2">
-    <div>
-        <img
-        class="footer_container_img"
-        src="./images/logo-blue.png"
-        alt="Imagen logotipo"
-        />
-    </div>
 
-    <div>
+        <img class="footer_container_img" src="./images/logo-blue.png"
+        alt="Imagen logotipo" />
+
+
+    <div class="copy">
         <p>&copy; <span id="year"></span> U're Invited. All Rights Reserved.</p>
     </div>
     
@@ -181,8 +186,7 @@
       <a href="https://www.linkedin.com/school/adalab/" target="_blank" class="footer_container_link">
         <i class="fa-brands fa-linkedin"></i>
       </a>
-    </div>
-  </div>
+    </div> 
 </footer>
 
     </div>
