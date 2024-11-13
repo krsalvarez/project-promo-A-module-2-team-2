@@ -1,125 +1,53 @@
-![Adalab](https://beta.adalab.es/resources/images/adalab-logo-155x61-bg-white.png)
 
-# Adalab web starter kit
+# U'r Invited
 
-Ahoy! Este es nuestro Starter Kit creado en **node y vite**. ¿Y qué es un Starter kit? Pues es una **plantilla de proyecto con funcionalidades preinstaladas y preconfiguradas**.
+U'r Invited is a web application that allows users to easily create and personalize beautiful invitation cards for birthdays, weddings, and various types of parties. With a user-friendly interface, customizable design options, and social media sharing, U'r Invited helps you craft the perfect invitation and share it effortlessly!
 
-Este Kit incluye un motor de plantillas HTML, el preprocesador SASS y un servidor local y muchas cosas más. El Kit nos ayuda a trabajar más cómodamente, nos automatiza tareas.
+## Features
 
-En el Kit hay 3 tipos de ficheros y carpetas:
+- **Easy-to-use Interface**: Simple and intuitive design for seamless user experience.
+- **Customizable Templates**: Choose from various invitation card templates for different events.
+- **Personalization**: Customize text, colors, images, and fonts to match the style of your event.
+- **Real-time Preview**: See your invitation card as you design it.
+- **Social Media Sharing**: Share your final invitation on social media platforms directly from the application.
 
-- Los ficheros que están sueltos en la raíz del repositorio, como vite.config.js, package.json... Son la configuración del proyecto y no necesitamos modificarlos (excepto este README.md, para describir tu proyecto).
-- La carpeta `src/`: son los ficheros de nuestra página web, como HTML, CSS, JS...
-- La carpeta `public/`, que tiene fichero estáticos como imágenes, fuentes, favicon, librerías de JavaScript antiguas (jQuery, ...)
-- Y la carpeta `docs/`, que es generada automáticamente cuando arrancamos el proyecto. El Kit lee los ficheros que hay dentro de `src/` y `public/`, los procesa y los genera dentro de `public/` y `docs/`.
+## Tech Stack
 
-## Guía de inicio rápido
+- **HTML**: For the structure of the pages.
+- **CSS**: For styling the invitations and interface.
+- **JavaScript**: For interactive functionality, including live preview and social media sharing.
 
-> **NOTA:** Necesitas tener instalado [Node JS](https://nodejs.org/) con una versión superior a la 14 para trabajar con este Starter Kit:
+## Getting Started
 
-### Pasos a seguir cada vez que queremos arrancar un proyecto desde cero:
+### Prerequisites
 
-1. **Crea tu propio repositorio.**
-1. Descarga este **Starter kit desde GitHub**.
-   - No recomendamos que clones este repo ya que no podrás añadir commits.
-1. **Copia todos los ficheros** de este Starter kit en la carpeta raíz de tu repositorio.
-   - Recuerda que debes copiar **también los ficheros ocultos** que comienzan por un punto.
-   - Si has decidido clonar este repo, no debes copiar la carpeta `.git`. Si lo haces estarás machacando tu propio repositorio.
-1. **Abre una terminal** en la carpeta raíz de tu repositorio.
-1. **Instala las dependencias** locales ejecutando en la terminal el comando:
+To run the project locally, you just need a web browser.
 
-```bash
-npm install
-```
+### Installation
 
-### Pasos para arrancar el proyecto:
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/ur-invited.git
+   ```
+2. Open the project folder and launch the `index.html` file in a web browser.
 
-Una vez hemos instalado las dependencias, vamos a arrancar el proyecto. **El proyecto hay que arrancarlo cada vez que te pongas a programar.** Para ello ejecuta el comando:
+## Usage
 
-```bash
-npm run dev
-```
+1. Choose the type of event for your invitation (e.g., birthday, wedding, or party).
+2. Select a template and personalize it by adding your own text, images, and styling.
+3. Preview your invitation in real-time.
+4. Save or directly share your invitation on social media.
 
-Este comando:
+## Future Improvements
 
-- **Abre una ventana de Chrome y muestra tu página web**, al igual que hace el plugin de VS Code Live Server (Go live).
-- También **observa** todos los ficheros que hay dentro de la carpeta `src/`, para que cada vez que modifiques un fichero **refresca tu página en Chrome**.
-- También **procesa los ficheros** HTML, SASS / CSS y JS. Por ejemplo:
-   - Convierte los ficheros SASS en CSS.
-   - Combina los diferentes ficheros de HTML y los agrupa en uno o varios ficheros HTML.
+- **More Templates**: Add new templates for various types of events.
+- **Enhanced Sharing Options**: Include more social media platforms for sharing.
+- **Download Option**: Enable downloading the final invitation as an image or PDF.
 
-Después de ejecutar `npm run dev` ya puedes empezar a editar todos los ficheros que están dentro de la carpeta `src/` y programar cómodamente.
+## Contributing
 
-### Pasos para publicar el proyecto en GitHub Pages:
+Contributions are welcome! If you have any suggestions or improvements, feel free to submit an issue or pull request.
 
-Para generar tu página para producción ejecuta el comando:
+---
 
-```bash
-npm run build
-```
-
-Y a continuación:
-
-1. Sube a tu repo la carpeta `docs/` que se te acaba de generar.
-1. Entra en la pestaña `settings` de tu repo.
-1. Y en el apartado de GitHub Pages activa la opción **master branch /docs folder**.
-1. Y ya estaría!!!
-
-Además, los comandos:
-
-```bash
-npm run push-docs
-```
-o
-
-```bash
-npm run deploy
-```
-
-son un atajo que nos genera la versión de producción y hace push de la carpeta `docs/` del tirón. Te recomendamos ver el fichero `package.json` para aprender cómo funciona.
-<!--
-## Flujo de archivos con Gulp
-
-Estas tareas de Gulp producen el siguiente flujo de archivos:
-
-![Gulp flow](./gulp-flow.png)
-
-## `gulpfile.js` y `config.json`
-
-Nuestro **gulpfile.js** usa el fichero `config.json` de configuración con las rutas de los archivos a generar / observar.
-
-De esta manera separarmos las acciones que están en `gulpfile.js` de la configuración de las acciones que están en `config.json`.
--->
-## Estructura de carpetas
-
-La estructura de carpetas tiene esta pinta:
-
-```
-src
- ├─ api // los ficheros de esta carpeta se copian en public/api/
- |  └─ data.json
- ├─ images
- |  └─ logo.jpg
- ├─ js // los ficheros de esta carpeta se concatenan en el fichero main.js y este se guarda en public/main.js
- |  ├─ main.js
- |  └─ events.js
- ├─ scss
- |  ├─ components
- |  ├─ core
- |  ├─ layout
- |  └─ pages
- └─ html
-    └─ partials
-```
-
-> **NOTA:** Los partials de HTML y SASS del proyecto son orientativos. Te recomendamos usar los que quieras, y borrar los que no uses.
-<!--
-## Vídeotutoriales del Starter kit
-
-- [Qué es, trabajar con la versión de desarrollo y rutas relativas](https://www.youtube.com/watch?v=XwvhXvBijos)
-- [Migración de un proyecto, trabajar con la versión de producción y GitHub Pages](https://www.youtube.com/watch?v=qqGClcgt9Uc)
-- [Motor de plantillas](https://www.youtube.com/watch?v=4GwXOJ045Zg)
--->
-## Falta algo?
-
-Echas de menos que el kit haga algo en concreto? Pidelo sin problema a través de las issues o si te animas a mejorarlo mándanos un PR :)
+Happy inviting! 🎉
