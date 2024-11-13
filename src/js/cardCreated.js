@@ -19,8 +19,8 @@ const backgroundClass =
             nameCard.innerHTML = cardData.field2;
             locationCard.innerHTML = cardData.field3;
             dateCard.innerHTML = cardData.field4;
-            imageCard.style.backgroundImage = `url(${cardData.photo})`;
-            const palettesCard = `palette-${cardData.field1}`;
+            // imageCard.style.backgroundImage = `url(${cardData.photo})`;
+            // const palettesCard = `palette-${cardData.field1}`;
 
-            paletteCard.classList.add(`background-${cardData.field5}`);
+            // paletteCard.classList.add(`background-${cardData.field5}`);
         })
